@@ -18,6 +18,20 @@ export default async function MovieInfo({id}:{id:string}){
             <h3>⭐️ {movie.vote_average}</h3>
             <p>{movie.overview}</p>
             <a href={movie.homepage} target={"_blank"}>Homepage &rarr;</a>
+            <div className={styles.production}>
+            {movie.production_companies.map((prod)=>{
+                const isValidLogoPath = prod.logo_path && !prod.logo_path.includes("null");
+
+                return isValidLogoPath ? (
+                    <img
+                        key={prod.name} // 유니크한 키
+                        className={styles.production}
+                        src={prod.logo_path}
+                        alt={prod.name}
+                    />
+                ) : null; // 경로가 유효하지 않으면 렌더링하지 않음
+            })}
+            </div>
         </div>
     </div>
     )
