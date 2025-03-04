@@ -42,3 +42,9 @@
         border-radius: 20px;
         padding:10px
     }
+
+    .flexRow{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }

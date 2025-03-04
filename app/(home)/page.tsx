@@ -1,12 +1,18 @@
-import styles from "../../styles/home.module.css"
-import Movie from "../../components/movie"
+import styles from "../../styles/home.module.css";
+import Movie from "../../components/movie";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { API_URL } from "../constants";
 
 export const metadata = {
     title: "Home",
+    meta: [
+        {
+          name: "permissions-policy",
+          content: "picture-in-picture=(self)"
+        }
+    ]
 }
-
-
 
 async function getMovies(){
     // await new Promise((resolve) =>setTimeout(resolve, 1000))

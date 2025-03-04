@@ -17,3 +17,12 @@
 .container iframe:hover{
     opacity: 1;
 }
+
+.container iframe{
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    margin-top: 100px 
+}
+
