@@ -1,18 +1,18 @@
-.carousel{
-    margin: 0 auto;
-    height: 400px;
-    width: 85%;
-    margin:100px;
-    background-color: white;
-}
 
 .contentBox{
     display: relative;
     flex-direction: column;
     margin:100px;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    text-align:center;
+    font-weight:bold;
+    font-size:x-large;
 }
 
-.title{
-    text-align: center;
-    font-weight: bold;
+.poster{
+    height: 300px;
+    width: 80%;
 }
