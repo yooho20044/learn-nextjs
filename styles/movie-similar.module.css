@@ -1,3 +1,6 @@
+.container{
+    margin:50px;
+}
 
 .contentBox{
     display: relative;
@@ -9,7 +12,7 @@
 .title{
     text-align:center;
     font-weight:bold;
-    font-size:x-large;
+    font-size:xx-large;
 }
 
 .poster{

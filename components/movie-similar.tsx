@@ -29,7 +29,7 @@ export default async function MovieSimilar({id} : {id:string}){
       };
 
     return ( 
-        <div style={{margin:"50px"}}>
+        <div className={styles.container}>
             <h2 className={styles.title}>Recommend Movies</h2>
             <Slider {...settings}>
             {movies.map((movie, index) => (
